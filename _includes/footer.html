@@ -1,21 +1,36 @@
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+<div class="footer">
+	<div class="container">
+		<p class="copy">
+			&copy; {{ site.time | date: '%Y' }}
+			<a href="http://brianmaierjr.com">Brian Maier Jr.</a> Powered by
+			<a href="http://jekyllrb.com">Jekyll</a>
+		</p>
 
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
-  </ul>
+		<div class="footer-links">
+			<ul class="noList">
+				{%- if site.social.facebook -%}
+					{%- include footer_links/facebook_icon.html -%}
+				{%- endif -%}
+				{%- if site.social.twitter -%}
+					{%- include footer_links/twitter_icon.html -%}
+				{%- endif -%}
+				{%- if site.social.linkedin -%}
+					{%- include footer_links/linkedin_icon.html -%}
+				{%- endif -%}
+				{%- if site.social.github -%}
+					{%- include footer_links/github_icon.html -%}
+				{%- endif -%}
+				{%- if site.social.tumblr -%}
+					{%- include footer_links/tumblr_icon.html -%}
+				{%- endif -%}
+				{%- if site.social.youtube -%}
+					{%- include footer_links/youtube_icon.html -%}
+				{%- endif -%}
+				{%- if site.social.email -%}
+					{%- include footer_links/email_icon.html -%}
+				{%- endif -%}
+			</ul>
+		</div>
+	</div>
 </div>
-
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<!-- end .footer -->

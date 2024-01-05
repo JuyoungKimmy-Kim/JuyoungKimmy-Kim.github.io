@@ -1,5 +1,5 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS
+title: No google, Yes Joogle
+description: This is Juyoung Kim's Page
 
 url: https://long-haul.netlify.app
 # Only necessary when hosting your site in a sub-directory. Project sites hosted on GitHub Pages are the common use-case of this variable.
@@ -30,7 +30,7 @@ social:
     github: brianmaierjr
     twitter: brianmaierjr
     facebook: brianmaierjr
-    email: brimaidesigns@gmail.com
+    email: kimmykim.jy@gmail.com
     linkedin: brianmaierjr
     youtube: RickAstleyYT
     tumblr: i-am-a-fish

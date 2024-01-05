@@ -1,37 +1,22 @@
 ---
-layout: null
+layout: default
+title: Contact Long Haul
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}/</link>
-    <atom:link href="{{ "/feed.xml" |  prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {%- for post in site.posts limit:10 -%}
-      {%- unless post.link -%}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        {%- if post.excerpt -%}
-          <description>{{ post.excerpt | xml_escape }}</description>
-        {%- else -%}
-          <description>{{ post.content | xml_escape }}</description>
-        {%- endif -%}
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
-        {%- for tag in post.tags -%}
-        <category>{{ tag | xml_escape }}</category>
-        {%- endfor -%}
-        {%- for cat in post.categories -%}
-        <category>{{ cat | xml_escape }}</category>
-        {%- endfor -%}
-      </item>
-      {%- endunless -%}
-    {%- endfor -%}
-  </channel>
-</rss>
+
+<div id="contact">
+  <h1 class="pageTitle">Contact Me</h1>
+  <div class="contactContent">
+    <p class="intro">This is an example Contact page. If you want to make changes then do so in the <code>contact.html</code> file.</p>
+    <p>The form is provided by <a href="http://formspree.io/">Formspree.</a> Follow the directions on their site to set up the form for use.</p>
+    <p>If you have questions about the theme feel free to <a href="mailto:brimaidesigns@gmail.com">email me</a> or create an issue on <a href="https://github.com/brianmaierjr/long-haul">GitHub</a>. Enjoy!</p>
+  </div>
+  <form action="http://formspree.io/your@mail.com" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" class="full-width"><br>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="_replyto" class="full-width"><br>
+    <label for="message">Message</label>
+    <textarea name="message" id="message" cols="30" rows="10" class="full-width"></textarea><br>
+    <input type="submit" value="Send" class="button">
+  </form>
+</div>

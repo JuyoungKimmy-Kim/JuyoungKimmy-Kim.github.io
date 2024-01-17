@@ -1,65 +1,105 @@
-# Site
-name: 'Mundana'
-description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
-baseurl: '/mundana-theme-jekyll'
-disqus: 'demowebsite'
-email: 'wowthemesnet@gmail.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+# Site Settings
+name: Tddflix
+title: Tddflix | 건전한 개발 문화
+description: 건전한 개발 문화를 꿈꾸는 TDD 사무국 입니다.
+tags:
+  - blog
+  - template
+  - jekyll
+  - theme
+  - netlify
+show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
 
-include: ["_pages"]
-permalink: /:title/
+email: TDD.office@samsung.com
+# See: https://disqus.com/
+disqus_username: disqus_username
+# Contact Form Setting
+# See: https://formspree.io/
+formspree_form_id: formspree_form_id
 
-# Plugins
-plugins: 
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-seo-tag
-  
-authors:
-    sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
 
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
- 
-# Defaults
-defaults:
+# Social Media Settings
+# Remove the item if you don't need it
+github_username: github_username
 
-  # all posts
-  - scope:
-      path: "_posts"
-    values:
-      layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
-      
-  # all pages
-  - scope:
-      path: "_pages"
-    values:
-      layout: page
-      
-# Syntax
+# Posts Settings
+show_time_bar: true
+show_modal_on_exit: false
+show_modal_on_finish_post: true
+two_columns_layout: true
+
+
+# Advanced Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
+language: "en"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
+
+
+# Build settings
 markdown: kramdown
 highlighter: rouge
+permalink: /:title/
+collections:
+  authors:
+    output: true
+paginate_path: "/page/:num/"
+show_get_theme_btn: true
+use_logo: false
 
-# Paginate
-paginate: 10
+# Content paginator
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
 
+# SASS
+sass:
+  style: compressed
 
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-paginate-content
 
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+# Exclude my node related stuff
+exclude: [
+  'docs/',
+  'vendor/',
+  'LICENSE',
+  'CHANGELOG.md',
+  'jekflix.gemspec',
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]
+
+# Theme
+version: v3.1.2

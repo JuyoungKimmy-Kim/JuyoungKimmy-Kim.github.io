@@ -1,0 +1,37 @@
+---
+layout: home
+# articles:
+#   excerpt_type: html
+---
+
+<!-- Hero Carousel -->
+<div class="hero-carousel">
+  <div class="carousel-container">
+    {% for post in site.posts limit:3 %}
+      {% if post.image %}
+        <div class="carousel-slide" style="background-image: url('{{ post.image | relative_url }}');">
+          <div class="carousel-content">
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  
+  <!-- Navigation buttons -->
+  <button class="carousel-nav carousel-prev">‹</button>
+  <button class="carousel-nav carousel-next">›</button>
+  
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    {% for post in site.posts limit:3 %}
+      {% if post.image %}
+        <div class="carousel-indicator"></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Include carousel styles and scripts -->
+<link rel="stylesheet" href="{{ '/assets/css/hero-carousel.css' | relative_url }}">
+<script src="{{ '/assets/js/hero-carousel.js' | relative_url }}"></script>

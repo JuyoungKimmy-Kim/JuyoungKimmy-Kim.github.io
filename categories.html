@@ -1,0 +1,95 @@
+---
+layout: page
+show_title: false
+titles:
+  # @start locale config
+  en      : &EN       Categories
+  en-GB   : *EN
+  en-US   : *EN
+  en-CA   : *EN
+  en-AU   : *EN
+  zh-Hans : &ZH_HANS  分类
+  zh      : *ZH_HANS
+  zh-CN   : *ZH_HANS
+  zh-SG   : *ZH_HANS
+  zh-Hant : &ZH_HANT  分類
+  zh-TW   : *ZH_HANT
+  zh-HK   : *ZH_HANT
+  ko      : &KO       카테고리
+  ko-KR   : *KO
+  fr      : &FR       Catégories
+  fr-BE   : *FR
+  fr-CA   : *FR
+  fr-CH   : *FR
+  fr-FR   : *FR
+  fr-LU   : *FR
+  tr      : &TR       Kategoriler
+  # @end locale config
+---
+
+<div class="categories">
+  {% for category in site.categories %}
+    <div class="category">
+      <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
+      <ul>
+        {% for post in category[1] %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.categories {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.category {
+  margin-bottom: 40px;
+}
+
+.category h2 {
+  color: #333;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.category li:last-child {
+  border-bottom: none;
+}
+
+.category a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.category a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  color: #666;
+  font-size: 0.9em;
+}
+</style>

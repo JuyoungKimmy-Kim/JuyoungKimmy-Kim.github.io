@@ -3,11 +3,11 @@ title: A2A Protocol vs LangGraph
 date: 2025-07-21
 categories: [AI]
 tags: [Agent, LangGraph]
-image: /assets/images/langraph.png
-excerpt: "A2A Protocol과 LangGraph는 AI 에이전트 간 통신과 협업을 위한 서로 다른 접근 방식을 제공합니다."
+image: /assets/images/posts/langgraph/langraph.png
+excerpt: "A2A Protocol과 LangGraph는 AI 에이전트 간 통신과 협업을 위한 서로 다른 접근 방식을 제공한다"
 ---
 
-![LangGraph](/assets/images/langraph.png)
+![LangGraph](/assets/images/posts/langgraph/langraph.png)
 
 ## A2A protocol
 - A2A(Agent-to-Agent) 프로토콜은 AI agent간 직접적이고 효율적인 통신을 가능하게 하기 위해 설계된 framework

@@ -30,9 +30,14 @@
     {%- include snippets/prepend-baseurl.html path=_article.url -%}
     {%- assign _article_url = __return -%}
 
-    {%- if _article.cover -%}
-      {%- include snippets/get-nav-url.html path=_article.cover -%}
-      {%- assign _article_cover = __return -%}
+    {%- if _article.cover or _article.image -%}
+      {%- if _article.cover -%}
+        {%- include snippets/get-nav-url.html path=_article.cover -%}
+        {%- assign _article_cover = __return -%}
+      {%- elsif _article.image -%}
+        {%- include snippets/get-nav-url.html path=_article.image -%}
+        {%- assign _article_cover = __return -%}
+      {%- endif -%}
     {%- endif -%}
 
     {%- if include.type == 'item' -%}
@@ -41,9 +46,14 @@
       {%- else -%}
         <article class="item">
       {%- endif -%}
-        {%- if _article.cover and include.show_cover-%}
-          {%- include snippets/get-nav-url.html path=_article.cover -%}
-          {%- assign _article_cover = __return -%}
+        {%- if (_article.cover or _article.image) and include.show_cover-%}
+          {%- if _article.cover -%}
+            {%- include snippets/get-nav-url.html path=_article.cover -%}
+            {%- assign _article_cover = __return -%}
+          {%- elsif _article.image -%}
+            {%- include snippets/get-nav-url.html path=_article.image -%}
+            {%- assign _article_cover = __return -%}
+          {%- endif -%}
           <div class="item__image">
           {%- if include.cover_size == 'lg' -%}
             <img class="image image--lg" src="{{ _article_cover }}" />
@@ -111,7 +121,7 @@
       {%- if include.size == 'sm' -%}
         <div class="cell cell--12 cell--md-4 cell--lg-3">
           <div class="card card--flat">
-            {%- if _article.cover -%}
+            {%- if _article.cover or _article.image -%}
               <div class="card__image">
                 <img class="image" src="{{ _article_cover }}" />
                 <div class="overlay overlay--bottom">
@@ -127,7 +137,7 @@
 
         <div class="cell cell--12 cell--md-6 cell--lg-4">
           <div class="card card--flat">
-            {%- if _article.cover -%}
+            {%- if _article.cover or _article.image -%}
               <div class="card__image"><img src="{{ _article_cover }}" /></div>
             {%- endif -%}
               <div class="card__content">

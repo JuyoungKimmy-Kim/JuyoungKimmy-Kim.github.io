@@ -1,9 +1,9 @@
 ---
-title: Google ADK 뿌수기 (1)
+title: Google ADK 기본 개념
 date: 2025-11-27
 categories: [AI]
 tags: [Agent, ADK]
-image: /assets/images/posts/langgraph/langgraph.png
+image: /assets/images/posts/adk/adk.png
 excerpt: "Agent Development Kit(ADK)는 AI Agent를 개발하고 배포하기 위한 유연한 모듈식의 프레임워크로, Gemini와 Google 생태계에 최적화되어 있지만, 특정 모델이나 배포 방식에 종속되지 않으며, 다른 프레임워크와의 호환성을 염두에 두고 설계되었다."
 
 ---

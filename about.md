@@ -29,27 +29,25 @@ titles:
 ![Profile Image](/assets/images/logo/icon.png)
 
 Hi there! This is Kimmy!
-{:info}
 
-## 소개
+## About
 
-- 백엔드 개발자 지망생에서 Test Engineer. Test Engineer에서 AI Engineer를 향해 가는 Software Engineer
-- 저의 직업을 지칭하는 많은 이름이 있지만, 그중에서 **Software Engineer**라는 말을 가장 좋아합니다 :>
+A **software engineer** with a background in backend development and test engineering, now focusing on AI.
 
-## 관심 분야
+## ⚒️ Skills
+> Current working for SAMSUNG electronics
 
-- **AI & Machine Learning**: AI Agent 기술
+- **AI**: LLM, MCP, Agent Architecture
 - **Web**: React, Next.js, FastAPI, Jekyll
 - **DataBase**: MySQL, PostgreSQL
-- **CI/CD**: Docker
+- **CI/CD**: Docker, Nginx
 
-## 연락처
+## ☎️ Contact
 
-- **e-mail**: kimmykim.jy@gmail.com
+- **Email**: kimmykim.jy@gmail.com
 - **GitHub**: [JuyoungKimmy-Kim](https://github.com/JuyoungKimmy-Kim)
 
-## 이전 블로그
+## Previous Blog
 
-- [kimmy.log](https://velog.io/@kimmy/posts)
+- Velog [kimmy.log] (2021~2024)(https://velog.io/@kimmy/posts)
 
----

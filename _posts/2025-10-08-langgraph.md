@@ -2,7 +2,7 @@
 title: LangGraph 개념 및 기본 예제
 date: 2025-10-08
 categories: [AI]
-tags: [Agent, RAG]
+tags: [Agent, RAG, LangGraph]
 image: /assets/images/posts/langgraph/langgraph.png
 excerpt: "angGraph는 LangChain 생태계 안에서 개발된 AI Agent 워크플로우 오케스트레이션 프레임워크로, 단순 Chain이나 Prompt기반 흐름보다 더 복잡하고 유연한 제어 흐름을 지원한다"
 

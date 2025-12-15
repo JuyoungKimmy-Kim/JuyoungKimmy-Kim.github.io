@@ -49,5 +49,5 @@ A **software engineer** with a background in backend development and test engine
 
 ## Previous Blog
 
-- Velog [kimmy.log] (2021~2024)(https://velog.io/@kimmy/posts)
+- Velog [kimmy.log](https://velog.io/@kimmy/posts) ((2021~2024))
 

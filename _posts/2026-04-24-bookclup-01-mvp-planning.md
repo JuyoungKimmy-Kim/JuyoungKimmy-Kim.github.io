@@ -3,7 +3,7 @@ title: "[bookclub 개발기] 1. MVP, 기술 스택 선정"
 date: 2026-04-24
 categories: [개발]
 tags: [bookclup, react-native, expo, mvp]
-image: /assets/images/posts/bookclub/main.png
+image: /assets/images/posts/bookclub/logo.png
 excerpt: "독서 모임 앱을 만들어보기로 했다. 기능을 줄이되 구조는 확장 가능하게. MVP 범위를 정하고 기술 스택을 선정한 과정을 정리한다."
 
 ---

@@ -1,9 +1,9 @@
 ---
-title: "[bookclub 개발기] 3. 소셜 로그인 삽질기 (카카오/구글/네이버)"
+title: "[bookclub 개발기] 3. 소셜 로그인 삽질기 (카카오/구글)"
 date: 2026-04-24
 categories: [개발]
 tags: [bookclup, supabase, kakao, google, oauth]
-image: /assets/images/posts/bookclub/main.png
+image: /assets/images/posts/bookclub/logo.png
 excerpt: "카카오/구글/네이버 소셜 로그인을 Supabase에 붙이면서 만난 삽질들. KOE101, KOE205, Unable to exchange external code 에러와 웹 호환성 이슈까지."
 
 ---

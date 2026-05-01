@@ -3,7 +3,7 @@ title: "[bookclub 개발기] 2. Supabase로 백엔드 해결하기"
 date: 2026-04-24
 categories: [개발]
 tags: [bookclup, supabase, postgresql, rls]
-image: /assets/images/posts/bookclub/main.png
+image: /assets/images/posts/bookclub/logo.png
 excerpt: "별도 백엔드 서버 없이 Supabase 하나로 인증, 데이터베이스, API, 보안을 전부 해결했다. 테이블 설계부터 RLS 정책, 삽질 기록까지."
 
 ---
